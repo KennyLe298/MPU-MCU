@@ -1,3 +1,5 @@
 *.pdsbak
 *.workspace
 *.json
+*.settings
+*.prefs
