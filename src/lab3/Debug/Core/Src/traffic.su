@@ -1,0 +1,3 @@
+traffic.c:16:6:traffic_fsm	8	static
+traffic.c:89:6:traffic_reset	8	static
+traffic.c:95:6:traffic_set_counter	16	static

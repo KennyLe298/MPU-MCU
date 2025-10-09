@@ -1,0 +1,7 @@
+led_display.c:12:6:setHorLed	16	static
+led_display.c:41:6:setVerLed	16	static
+led_display.c:92:6:set7segHor	32	static
+led_display.c:99:6:set7segVer	32	static
+led_display.c:106:6:scan7seg	16	static
+led_display.c:130:6:updateSeg	24	static
+led_display.c:137:6:updateSeg2Digits	16	static
