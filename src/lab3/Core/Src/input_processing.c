@@ -18,7 +18,7 @@ int temp_value = 1;
 int blink_state = 0;
 
 void fsm_for_input_processing(void){
-    static uint8_t last_mode_button = 0;
+    static uint8_t last_mode_button = 1;
     static uint8_t last_inc_button = 0;
     static uint8_t last_set_button = 0;
 
@@ -125,3 +125,4 @@ void fsm_for_input_processing(void){
         last_set_button = is_button_pressed(2);
     }
 }
+
