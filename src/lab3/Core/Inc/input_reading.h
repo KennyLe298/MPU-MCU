@@ -17,6 +17,8 @@
 #define PRESSED GPIO_PIN_RESET
 #define RELEASED GPIO_PIN_SET
 
+void init_button_reading(void);
+
 void button_reading(void);
 unsigned char is_button_pressed(unsigned char index);
 unsigned char is_button_pressed_1s(unsigned char index);
