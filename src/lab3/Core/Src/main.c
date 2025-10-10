@@ -95,28 +95,35 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim2);
+  init_button_reading();
   traffic_reset();
-  /* USER CODE END 2 */
 
+
+  /* USER CODE END 2 */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  setTimer5(500);
+  setTimer3(50);
+  setTimer5(250);
 
   while (1)
   {
     /* USER CODE END WHILE */
-
+	  if(flag3){
+          flag3 = 0;
+          fsm_for_input_processing();
+          setTimer3(50);
+      }
     /* USER CODE BEGIN 3 */
+    
 	  if(flag5){
 		  flag5 = 0;
 		  scan7seg(scan_state);
 		  if(scan_state >=1) scan_state = 0;
 		  else scan_state++;
       
-		  setTimer5(500);
+		  setTimer5(250);
 	  }
 
-	  fsm_for_input_processing();
   }
   /* USER CODE END 3 */
 }

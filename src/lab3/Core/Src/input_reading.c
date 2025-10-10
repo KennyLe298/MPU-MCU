@@ -19,6 +19,14 @@ static uint16_t counterForButtonPress1s[N0_OF_BUTTONS]; //counter for auto incre
 GPIO_TypeDef* buttonPorts[N0_OF_BUTTONS] = {button_1_GPIO_Port, button_2_GPIO_Port, button_3_GPIO_Port};
 uint16_t buttonPins[N0_OF_BUTTONS] = {button_1_Pin, button_2_Pin, button_3_Pin};
 
+void init_button_reading(void){
+    for(int i = 0; i < N0_OF_BUTTONS; i++){
+        debounceButtonBuffer1[i] = RELEASED;
+        debounceButtonBuffer2[i] = RELEASED;
+        buttonBuffer[i] = RELEASED;
+    }
+}
+
 void button_reading(void){
 	for(int i = 0; i < N0_OF_BUTTONS; i++){
 		debounceButtonBuffer2[i] = debounceButtonBuffer1[i];

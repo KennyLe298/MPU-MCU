@@ -18,7 +18,7 @@ int temp_value = 1;
 int blink_state = 0;
 
 void fsm_for_input_processing(void){
-    static uint8_t last_mode_button = 1;
+    static uint8_t last_mode_button = 0;
     static uint8_t last_inc_button = 0;
     static uint8_t last_set_button = 0;
 
@@ -46,9 +46,6 @@ void fsm_for_input_processing(void){
 
     if(current_mode == 1){
 
-    	if(flag2 == 0 && timer2 == 0){
-    	    setTimer2(1000);
-    	}
     	traffic_fsm();
     }
 		else if(current_mode == 2 || current_mode == 3 || current_mode == 4){
@@ -125,4 +122,3 @@ void fsm_for_input_processing(void){
         last_set_button = is_button_pressed(2);
     }
 }
-
