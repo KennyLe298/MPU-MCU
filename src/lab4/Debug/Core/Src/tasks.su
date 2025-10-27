@@ -1,0 +1,7 @@
+tasks.c:9:6:LED_Task_500ms	8	static
+tasks.c:13:6:LED_Task_1000ms	8	static
+tasks.c:17:6:LED_Task_1500ms	8	static
+tasks.c:21:6:LED_Task_2000ms	8	static
+tasks.c:25:6:LED_Task_2500ms	8	static
+tasks.c:29:6:OneShot_Task	8	static
+tasks.c:52:6:Print_Timestamp	16	static

@@ -1,0 +1,4 @@
+input_reading.c:22:6:init_button_reading	16	static
+input_reading.c:30:6:button_reading	16	static
+input_reading.c:57:15:is_button_pressed	16	static
+input_reading.c:62:15:is_button_pressed_1s	16	static

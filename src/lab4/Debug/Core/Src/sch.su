@@ -1,0 +1,10 @@
+sch.c:16:6:SCH_Init	8	static
+sch.c:28:9:SCH_Add_Task	32	static
+sch.c:61:9:SCH_Delete_Task	16	static
+sch.c:82:9:SCH_Delete_All_Tasks	16	static
+sch.c:103:6:SCH_Update	16	static
+sch.c:121:6:SCH_Dispatch_Tasks	16	static
+sch.c:139:6:SCH_Go_To_Sleep	8	static
+sch.c:144:10:SCH_Get_Current_Tasks	4	static
+sch.c:149:10:SCH_Get_Error_Code	4	static
+sch.c:154:11:SCH_Get_Time	4	static
